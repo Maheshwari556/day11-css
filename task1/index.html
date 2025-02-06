@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .container{
+                display:grid;
+                gap:20px;
+                width:50vh;
+                grid-template-columns: auto auto auto ;
+                grid-template-areas: 
+                "header header header"
+                "navbar navbar navbar"
+                "section section aside"
+                "article article aside"
+                "footer footer footer"
+            }
+            .container>div{
+                padding: 20px;
+            }
+            .header{
+                grid-area: header;
+                background: lightblue;
+                height: 40px;
+            }
+            .nav{
+                grid-area: navbar;
+                background: lightsalmon;
+                height: 40px;
+            }
+            .aside{
+                grid-area: aside;
+                background: lightslategray;
+            }
+            .section{
+                grid-area: section;
+                background: red;
+                height: 40px;
+            }
+            .article{
+                grid-area: article;
+                background: green;
+                height: 40px;
+            }
+            .footer{
+                grid-area: footer;
+                background: lightblue;
+                height: 40px;
+            }
+    </style>
+</head>
+<body class="container">
+    <div class="header">header</div>
+    <div class="nav">navbar</div>
+    <div class="aside">aside</div>
+    <div class="section">section</div>
+    <div class="article">article</div>
+    <div class="footer">footer</div>
+</body>
+</html>
